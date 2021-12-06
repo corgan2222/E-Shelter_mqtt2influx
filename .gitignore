@@ -116,3 +116,6 @@ dmypy.json
 .conf
 
 /tmp
+*.conf
+*.csv
+*.xlsx
