@@ -75,6 +75,7 @@ def _parse_mqtt_message(payload):
     return SensorData(friendlyGW, eepId, deviceId, label, label_short, int(dbm), sensortype, room, int(value), int(floor), float(voltage), int(count), timestamp)
 
 
+
 def send_sensor_data_to_influxdb(sensor_data):
     log.debug(sensor_data)
     json_body = [
